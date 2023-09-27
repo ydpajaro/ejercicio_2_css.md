@@ -1,3 +1,15 @@
+:root {
+    --primary-color: #28B463 ;
+    --secundary-color:#82E0AA;
+    --fourth-color:#212F3D ;
+    --fifth-color:#117A65; 
+    --sixth-color:#D1F2EB;
+    --header-size: 4rem;
+    --font: 1.8rem; 
+    --font-weight: bold
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,5 +18,139 @@
 
 hmtl {
     font-size: 62.5%;
-    background-color: antiquewhite;
+    background-color: var(--fifth-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#body {
+    margin: 1.5rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+#header-div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    background-image: url('images/icon/loro.jpg'); 
+    background-size: cover; 
+    background-position: bottom center; 
+    margin: 1.5rem;
+    width: 85vw;
+    height: 30vh;
+    background-color: var(--fifth-color);  
+    font-size: var(--font); 
+    font-weight: var(--font-weight);
+    border: 0.1rem solid black;
+}
+
+.title-main {
+   
+    color: var(--fourth-color);
+    vertical-align: middle;
+    text-shadow:
+    
+    5px 5px 2px yellow, 
+    8px 8px 3px blue,  
+    3px 3px 1px red;   /
+}
+    
+
+#main {
+    padding: 1.5rem;
+    width: 95vw;
+    min-height: 100vh;
+    background-color:var(--secundary-color);
+    border: 0.1rem solid black;
+    
+}
+#section-body {
+    margin:1.5rem;
+    background-color:#ABEBC6;  
+    width: 85vw;
+    
+    
+}
+
+
+#footer-main {
+    margin:1.5rem;
+    padding: 1.5rem 1.5rem;
+    width: 85vw;
+    min-height: 15vh;
+    background-color:var(--fifth-color);  
+    font-size: 1.2rem; 
+    vertical-align: middle;
+    text-align: center;
+    border: 0.1rem solid black;
+    
+    
+}
+
+
+
+.footer-description {
+    font-size: 1rem;
+}
+
+
+
+.flex-container {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    border: solid 0.1rem;
+    flex-direction: column;
+}
+
+.flex-item {
+    display: inline-block;
+    justify-items: center; 
+    align-items: center; 
+    grid-gap: 0.1rem; 
+        
+    
+}
+
+.flex-item img {
+    height: 10rem; 
+   
+
+}
+
+
+
+img   {
+    
+    display: flex;
+    margin: 0.5rem;
+    min-width: 7.5rem;
+    max-width: 10rem;
+    border: 0.1rem solid black;
+    background-size: cover;
+    
+} 
+
+section {
+    border: 0.1rem solid black;
+}
+
+.image-description {
+    display: none; 
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    position: absolute; 
+    top: 50%; 
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); 
+    padding: 10px; 
+    transition: opacity 0.3s ease; 
+}
+
+
+
+.flex-item:hover .image-description {
+    display: block; 
 }
